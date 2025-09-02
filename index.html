@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Ronit Bhattacharya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-container">
+            <div class="header-text">
+                <h1><span>Hi, I'm Ronit Bhattacharya</span><br></h1>
+                <p>Front End Developer Specializing in UI/UX and Payment Gateway Integration || Transitioning into Data Science and Supply Chain Management</p>
+            </div>
+            <div class="header-image">
+                <img src="images/me1.png" alt="Ronit Bhattacharya">
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------about-------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+               <img src="images/removebg.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I have over 5 years of experience as a Content Operation Lead. In this role, I combined my skills as a UI Developer with leadership responsibilities, overseeing a team of 5 members.</p>
+                <p></p>
+                <p>Strong in design and integration with intuitive problem-solving skills. Passionate about implementing and working on new projects. Ability to translate business requirements into technical solutions. Proficient across front-end technologies (HTML5, CSS, JavaScript), CMS and e-commerce platforms (WordPress, Magento), and digital design and analytics tools (Canva, Google Analytics).</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>HTML, CSS5, JavaScript</li>
+                        <li><span>Programming</span><br>Python, R Programming</li>
+                        <li><span>Analytics</span><br>Google Analytics 4 (GA4), Google Search Console, Microsoft Power BI, Data Analytics</li>
+                        <li><span>SEO & Marketing</span><br>Search Engine Optimization</li>
+                        <li><span>Server & CMS</span><br>Server Management, WordPress</li>
+                        <li><span>Productivity Tools</span><br>Microsoft Office</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span>Content Operation Lead (Jan 2023 to Mar 2024)</span><br>
+                            <b>Project:</b> Blog & E-commerce Platform Updates for Healthcare Products<br>
+                            <ul>
+                                <li>Created blogs & managed ads in WordPress (Advanced Ads, Rank Math).</li>
+                                <li>Managed product catalogs & orders in Magento.</li>
+                                <li>Conducted SEO with Ahrefs, Semrush, KW Rank Tracker.</li>
+                                <li>Monitored performance with Google Analytics & Search Console.</li>
+                                <li>Managed AWS servers (SSL, hosting, monitoring, uptime).</li>
+                                <li>Fixed UI/UX with JavaScript, HTML5, CSS3.</li>
+                                <li>Designed graphics/banners using Canva for branding.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Customer Experience Expert (Jun 2019 to Dec 2022)</span><br>
+                            <b>Project:</b> Travel Industry (Specializing in Cultural and Entertainment Venues)<br>
+                            <ul>
+                                <li>Handled complex customer concerns requiring technical/product knowledge.</li>
+                                <li>Resolved escalated complaints and ensured customer satisfaction.</li>
+                                <li>Coordinated with departments for prompt solutions.</li>
+                                <li>Guided frontline service agents on complex cases.</li>
+                                <li>Maintained communication throughout resolution process.</li>
+                                <li>Processed manual bookings via ticketing platforms.</li>
+                                <li>Managed payment gateways, handled chargebacks & fraud cases.</li>
+                            </ul>
+                            <b>Tools Used:</b> Freshworks Suite (Freshdesk, Freshsales, Freshservice, Freshchat, Freshcaller, Freshmarketer), Adyen, Kustomer
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Master of Science</span><br>Data Science with Logistics and Supply Chain Management (Jul 2024 to Jun 2026)</li>
+                        <li><span>Bachelor of Technology</span><br>Mechanical Engineering (Aug 2012 to July 2016)</li>
+                    </ul>
+                </div>                  
+            </div>
+        </div>
+    </div>  
+</div>
+<!-------------------------contact----------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+        <ul class="contact-info">
+            <li><i class="fas fa-envelope"></i>ronitbhattacharya22694@gmail.com</li>
+            <li><i class="fas fa-phone"></i>+91 9241675242</li>
+            <li><i class="fas fa-linkedin"></i><a href="https://www.linkedin.com/in/ronit-b-b088b688/" rel="nofollow noopener" target="_blank">LinkedIn</a></li>
+        </ul>
+            <a href="images/Ronit_24015_CV.pdf" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+  function opentab(e, tabname) {
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    for (var i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active-link");
+    }
+    for (var j = 0; j < tabcontents.length; j++) {
+      tabcontents[j].classList.remove("active-tab");
+    }
+
+    e.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
