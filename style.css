@@ -242,130 +242,227 @@ nav ul li a:hover::after{
 .tab-links:hover {
   color: #06b6d4; 
 }
-/*------------------------contact--------------------------*/
-.contact-left{
-  flex-basis: 35%;
+
+/*---------------- Academic Projects ----------------*/
+#projects{
+    padding: 60px 0;
 }
-.contact-right{
-  flex-basis: 60%;
-}
-.contact-left p{
-  margin-top: 30px;
-}
-/*.contact-left p i{
-  color: #38bdf8;
-  margin-right: 15px;
-  font-size: 20px;
-}*/
-.contact-info {
-  list-style: none;   
-  padding: 0;
-  margin: 20px 0;
-}
-.contact-info li {
-  margin-bottom: 15px;    
-  font-size: var(--font-base);
-  color: #f1f1f1;
-  position: relative;
-  padding-left: 25px;     
-}
-.contact-info li i{
-  color: #34d399;
-  margin-right: 12px;
-  font-size: 20px;
+
+.project-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
 
 }
-.contact-info li a {
-  margin-left: 5px;
-  color: #34d399;
-  text-decoration: none;
+
+.project-card{
+
+    background:#1e293b;
+
+    border-radius:14px;
+
+    padding:28px;
+
+    transition:.35s;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+
 }
-.contact-info li a:hover {
-  color: #06b6d4;
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
 }
-/*.contact-info li::before {
-  content: "•";          
-  position: absolute;
-  left: 0;
-  color: #34d399;       
-  font-size: 22px;
-  line-height: 1;
+
+.project-card h2{
+
+    color:#34d399;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
 }
-.contact-info p {
-  margin: 10px 0;
-  font-size: 18px;
-  color: #e5e7eb;
+
+.project-card h3{
+
+    color:#ffffff;
+
+    font-size:19px;
+
+    margin-bottom:18px;
+
+    line-height:1.5;
+
 }
-.contact-info p a {
-  color: #34d399;
-  text-decoration: none;
+
+.project-card p{
+
+    color:#d1d5db;
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
 }
-.contact-info p a:hover {
-  color: #06b6d4;
+
+.tech-stack{
+
+    color:#06b6d4;
+
+    font-weight:600;
+
+    font-size:16px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:18px;
+
 }
-.social-icons{
-  margin-top: 30px;
+/*---------------- CONTACT ----------------*/
+
+#contact{
+    padding:80px 0;
 }
-.social-icons a{
-  text-decoration: none;
-  font-size: 30px;
-  margin-right: 15px;
-  color: #ababab;
-  display: inline-block;
+
+.contact-left{
+    flex-basis:35%;
 }
-.social-icons a:hover{
-  color:#34d399;
-  transform: translateY(-5px);
-}*/
-.btn.btn2 {
-  display: inline-block;
-  background: linear-gradient(135deg, #34d399, #10b981);
-  padding: 14px 35px;
-  color: #0f172a;
-  font-size: var(--font-base);
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin-top: 20px;
+
+.contact-right{
+    flex-basis:60%;
 }
-.btn.btn2:hover {
-  background: linear-gradient(135deg, #06b6d4, #0284c7);
-  color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0px 4px 15px rgba(6,182,212,0.5);
+
+.contact-info{
+
+    list-style:none;
+
+    margin:30px 0;
+
+    padding:0;
+
 }
-.contact-right form{
-  width: 100%;
+
+.contact-info li{
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
 }
-form input, form textarea{
-  width: 100%;
-  border: 0;
-  outline: none;
-  background: #1e293b;
-  padding: 15px;
-  margin: 15px 0;
-  color: #ffffff;
-  font-size: var(--font-base);
-  border-radius: 6px;
+
+.contact-info li i{
+
+    color:#34d399;
+
+    width:28px;
+
+    margin-right:12px;
+
 }
-form btn2{
-  padding: 14px 40px;
-  font-size: 18px;
-  margin-top: 20px;
-  cursor: pointer;
-  background: #34d399;
-  color: #0f172a;
-  border: none
+
+.contact-info a{
+
+    color:#34d399;
+
+    text-decoration:none;
+
 }
-.btn2:hover {
-  background: #059669;
+
+.contact-info a:hover{
+
+    color:#06b6d4;
+
 }
-form input[type="submit"], 
-button, 
-.btn.btn2 {
-  box-shadow: none !important;
-  border: none;
+
+.btn.btn2{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:14px 35px;
+
+    background:linear-gradient(135deg,#34d399,#10b981);
+
+    color:#0f172a;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn.btn2:hover{
+
+    transform:translateY(-3px);
+
+    background:linear-gradient(135deg,#06b6d4,#0284c7);
+
+    color:#fff;
+
+}
+
+/*------------ Certification Card ------------*/
+
+.certificate-card{
+
+    background:#1e293b;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.certificate-card h2{
+
+    color:#34d399;
+
+    margin-bottom:25px;
+
+    font-size:28px;
+
+}
+
+.certificate-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.certificate-card li{
+
+    margin-bottom:18px;
+
+    line-height:1.6;
+
+    font-size:17px;
+
+}
+
+.certificate-card li i{
+
+    width:25px;
+
+    color:#34d399;
+
+    margin-right:12px;
+
 }
 /*------------css for small screens-----------------*/
 @media only screen and (max-width: 600px){
